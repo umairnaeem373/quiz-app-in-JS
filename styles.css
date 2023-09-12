@@ -1,0 +1,94 @@
+*{
+    transition:all 0.1s ease ;
+    box-sizing: border-box;
+}
+::selection{
+    background: #00000000;
+}
+.main {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main>button {
+    width: 70px;
+    font-size: 30px;
+    aspect-ratio: 1/1;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px aqua;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: wheat;
+    background: #000;
+    box-shadow: inset -5px -5px 10px aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.q-div {
+    width:50% ;
+    margin: 50px auto;
+    padding:20px 0px 20px 0px ;
+    display: none;
+    flex-wrap: wrap;
+    gap:12px ;
+    justify-content: center;
+    align-items:center;
+    border:3px solid silver ;
+    border-radius:10px ;
+    box-shadow: 5px 5px 30px 10px rebeccapurple,-5px -5px 30px 10px rebeccapurple ;
+}
+
+.q-div h1{
+    flex:0 0 100% ;
+    padding:0px 20px ;
+}
+
+.q-div button {
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid silver;
+    flex:0 0 250px ;
+}
+
+.choice{
+    border:3px solid royalblue !important ;
+    background:rgba(65, 105, 225, 0.5)
+}
+
+#next{
+    display: none;
+    width: 50px;
+    aspect-ratio:1/1 ;
+    margin: 0px auto;
+    border-radius:15px  ;
+    border:1px solid silver ;
+    font-size:15px ;
+}
+
+#next:hover{
+    box-shadow:5px 5px 10px black;
+    background: royalblue;
+    border:none ;
+    font-size:20px ;
+}
+
+.blur{
+color:royalblue ;
+font-weight: bolder;
+text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    .q-div{
+        width: auto;
+    }
+
+    
+}
